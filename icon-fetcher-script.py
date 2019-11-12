@@ -1,11 +1,9 @@
-from io import BytesIO
-
 import requests
 from bs4 import BeautifulSoup
 import urllib
 import ssl
-from PIL import Image
-from base64 import decodebytes
+
+
 
 # use this image scraper from the location that
 # you want to save scraped images to
@@ -30,13 +28,6 @@ def fetch_image(link, filename):
 
 def get_request_link(skill):
     return 'https://icons8.com/icons/set/' + skill
-
-
-# fetch_image("https://img.icons8.com/wired/2x/java-coffee-cup-logo.png", 'test.png')
-#
-# get_image_url('https://icons8.com/icons/set/java')
-
-# get_image_urls('https://icons8.com/icons/set/java')
 
 if __name__ == '__main__':
     path = input('enter file path: ')
